@@ -24,12 +24,15 @@
         var mtable = document.getElementById("mtable");
         var name = document.getElementById("name").value;
         var email = document.getElementById("email").value;
+        var pwd = document.getElementById("pwd").value;
+
 
         mtable.innerHTML = "";
 
         var employee = {
             "name": name,
-            "email": email
+            "email": email,
+            "pwd": pwd
         };
 
 
@@ -76,6 +79,10 @@
             <tr>
                 <td>Enter Email</td>
                 <td> <input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td> <input type="text" id="pwd"></td>
             </tr>
             <tr>
                 <td></td>
